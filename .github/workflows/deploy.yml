@@ -14,8 +14,8 @@ jobs:
     strategy:
       matrix:
         container:
-      - node:latest
-      - circleci/node:erbium-bullseye-browsers-legacy
+          - node:latest
+          - circleci/node:erbium-bullseye-browsers-legacy
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb+srv
       MONGODB_CLUSTER_ADDRESS: testcluster.cr4h5lt.mongodb.net
