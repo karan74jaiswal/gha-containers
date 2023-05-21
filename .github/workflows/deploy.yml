@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: node:latest 
+    container:
       image: circleci/node:erbium-bullseye-browsers-legacy
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb+srv
