@@ -10,9 +10,8 @@ env:
 jobs:
   test:
     environment: testing
-    runs-on:
-      container:
-        image: node:20
+    container:
+      image: node:20
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb+srv
       MONGODB_CLUSTER_ADDRESS: testcluster.cr4h5lt.mongodb.net
