@@ -11,10 +11,8 @@ jobs:
   test:
     environment: testing
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        containers: [node:latest, circleci/node:erbium-bullseye-browsers-legacy]
-    container: ${{matrix.containers}}
+    container:
+      image: node:latest
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb+srv
       MONGODB_CLUSTER_ADDRESS: testcluster.cr4h5lt.mongodb.net
