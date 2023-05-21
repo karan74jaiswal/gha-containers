@@ -12,9 +12,8 @@ jobs:
     environment: testing
     runs-on: ubuntu-latest
     container:
-      image: node:latest 
-    container:
-      image: circleci/node:erbium-bullseye-browsers-legacy
+      - image: node:latest
+      - image: circleci/node:erbium-bullseye-browsers-legacy
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb+srv
       MONGODB_CLUSTER_ADDRESS: testcluster.cr4h5lt.mongodb.net
